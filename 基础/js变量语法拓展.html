@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,9 +11,31 @@
         console.log(myName);
         myName = '?';
         console.log(myName);
-</script>
+
+        // 2. 声明多个变量
+        var age1 = 22;
+        var address1 = 'sz';
+        var salary1 = 5000;
+        var age2 = 18,
+            address2 = 'gl',
+            salary2 = 8000;
+
+        // 3. 声明变量的特殊情况
+        // 3.1 只声明不赋值  程序也不知道里面存的是啥 所以结果是undefined  未定义的
+        var sex;
+        console.log(sex); // undefined
+
+        // 3.2 不声明不赋值 只使用
+        // console.log(weight);
+
+        // 3.3 不声明可以直接赋值使用
+        phone = 12580;
+        console.log(phone);
+    </script>
 </head>
+
 <body>
-    
+
 </body>
+
 </html>
