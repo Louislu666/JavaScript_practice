@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js交换两个变量值</title>
+    <script>
+        // 1. 声明两个变量
+        var a1 = "哈哈";
+        var a2 = "嘻嘻";
+        console.log(a1);
+        console.log(a2);
+        // 2. 需要一个临时变量temp
+        var temp;
+        // 3. 把a1的值给临时变量
+        temp = a1;
+        // 4. 把a2的值给a1
+        a1 = a2;
+        // 5. 把临时变量的值给a2
+        a2 = temp;
+        console.log(a1);
+        console.log(a2);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
