@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js数据类型的分类</title>
+    <script>
+        // ① 数字型
+        // 1. 数字型的进制
+        var num = 10;    //num是数字型
+        var PI = 3.14;    //PI是数字型
+            // 1.1 八进制  0 ~ 7  我们程序里面数字加0 表示八进制
+        var num1 = 010;
+        console.log(num1);    //010 八进制转换为十进制就是 8
+        var num2 = 023;
+        console.log(num2);    //19
+            // 1.2 十六进制  0 ~ 9  a ~ f   数字前面加0x表示十六进制
+        var num3 = 0x9;
+        console.log(num3);  //9
+        var num4 = 0xc;
+        console.log(num4);  //12
+
+        // 2. 数字型的范围
+        // 2.1 数字型最大值
+        console.log(Number.MAX_VALUE);
+        // 2.2 数字型最小值
+        console.log(Number.MIN_VALUE);
+
+        // 3. 数字型的三个特殊值
+        // 3.1 无穷大
+        console.log(Number.MAX_VALUE * 2);  // Infinity
+        // 3.2 无穷小
+        console.log(-Number.MAX_VALUE * 2);  // -Infinity
+        // 3.3 非数字
+        console.log('Louis' - 10);  // NaN
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
