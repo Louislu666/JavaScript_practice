@@ -6,9 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>js数据类型-字符串拼接</title>
     <script>
-        // 检测获取字符串的长度  length
+        // 1. 检测获取字符串的长度  length
         var str = 'my name is Louis';
         console.log(str.length);
+        // 2. 字符串的拼接 +
+        console.log('super' + 'man'); //字符串的 superman
+        console.log('super' + 123); //字符串的 super123
+        console.log('super' + true); //字符串的 supertrue
+        console.log(12 + 12); //24
+        console.log('12' + 12); //1212
+        // 数值相加,字符相连
+
+        // 加强
+        // 变量不要写到字符串里面, 是通过和字符串相连的方式实现
+        console.log('华为' + 'p' + 20 + '手机');
+        var style = 20;
+        console.log('华为' + 'p' + style + '手机');
+        style += 10;
+        console.log('华为' + 'p' + style + '手机');
     </script>
 </head>
 
