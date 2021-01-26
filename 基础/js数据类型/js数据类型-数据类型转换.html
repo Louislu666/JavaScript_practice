@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js数据类型-数据类型转换</title>
+    <script>
+        // 一. 数字型转换为字符串型 
+        // 1. 利用toString()
+        var num = 10;
+        var str = num.toString();
+        console.log(num);
+        console.log(str);
+        console.log(typeof num);
+        console.log(typeof str);
+
+        // 2. 利用String()
+        console.log(String(num));
+
+        // 3. 利用 + 拼接字符串的方法实现转换效果 隐式转换
+        console.log(num + '');
+
+        // 二. 转换为数字型
+        // 1. parseInt(变量) 将字符型转换为数字型 结果是整数
+        var age = prompt('请输入你的年龄');
+        console.log(parseInt(age));
+        console.log(parseInt('3.1415926')); //3 取整
+        console.log(parseInt('3.9654354')); //3 取整
+        console.log(parseInt('50px')); //单位会去掉
+        console.log(parseInt('rem50px')); //NaN
+        // 2. parseFloat(变量) 将字符型转换为数字型 结果是小数 浮点数
+        console.log(parseInt('3.1415926')); //3.1415926
+        console.log(parseInt('50px')); //单位会去掉
+        console.log(parseInt('rem50px')); //NaN
+        // 3. 利用Number(变量)
+        var str = '123';
+        console.log(Number(str));
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
