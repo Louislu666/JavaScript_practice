@@ -1,3 +1,11 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-02-03 12:23:10
+ * @LastEditTime: 2021-02-03 17:57:44
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \zelind:\学习\JS\JavaScript_practice\基础\js数据类型\js数据类型-计算年龄案例.html
+-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,7 +14,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>js数据类型-计算年龄案例</title>
     <script>
-        1
+        // 弹出一个输入框(prompt),让用户输入出生年份(用户输入)\
+        var year = prompt('请您输入您的出生年份');
+        // 把用户输入的值用变量保存起来,然后用今年的年份减去变量值,结果就是现在的年龄(程序内部处理)
+        var age = 2021 - year;
+        // 弹出警示框(alert),把计算的结果输出(输出结果)
+        alert('您今年' + age + '岁了');
     </script>
 </head>
 
