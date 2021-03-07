@@ -7,18 +7,18 @@
     <title>js运算符-递增运算符练习</title>
     <script>
         var a = 10;
-        ++a;
-        var b = ++a + 2;
-        console.log(b);
+        ++a; // a = 11
+        var b = ++a + 2; // a = 12,b = 14
+        console.log(b); // 14
 
         var c = 10;
-        c++;
-        var d = c++ + 2;
-        console.log(d);
+        c++; // c = 11
+        var d = c++ + 2; // d = 11 + 2 = 13
+        console.log(d); // 13
 
         var e = 10;
-        var f = e++ + ++e;
-        console.log(f);
+        var f = e++ + ++e; // f = 10 + 12 = 22
+        console.log(f); // 22
     </script>
 </head>
 <body>
