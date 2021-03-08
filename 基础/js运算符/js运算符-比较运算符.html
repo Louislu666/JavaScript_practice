@@ -8,11 +8,22 @@
     <script>
         console.log(3 >= 5); //false
         console.log(2 <= 4); //true
-        // 1. 在程序里的等于符号是 == 默认转换数据类型 会把字符串类型转换为数字型
+        // 1. 在程序里的等于符号是 == 默认转换数据类型 会把字符串类型转换为数字型 只要求值相等就可以
         console.log(3 == 5); //false
         console.log('陆' == '路'); //false
         console.log(22 == 22); //true
         console.log(22 == '22'); //true
+        console.log(22 != 22); //false
+        // 2. 程序里有全等 一模一样  要求两侧的 值 和 数据类型 完全一致才可以
+        console.log(22 === 22); //true
+        console.log(22 === '22'); //false
+        // 练习
+        var num1 = 10;
+        var num2 = 100;
+        var res1 = num1 > num2;
+        var res2 = num1 == 11;
+        var res3 = num1 != num2;
+        console.log(res1,res2,res3); //false,false,true
     </script>
 </head>
 <body>
