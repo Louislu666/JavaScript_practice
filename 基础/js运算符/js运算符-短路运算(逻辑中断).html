@@ -11,6 +11,8 @@
         // 3. 逻辑与短路运算  如果表达式1 结果为真 则返回表达式2
         console.log(123 && 456); //456
         console.log(0 && 456); //0
+        console.log(0 && 5 + 6 && 345 * 678); //0
+        // 如果有空的或者否定的为假 其余是真的 0 '' null undefined NaN
     </script>
 </head>
 <body>
