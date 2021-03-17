@@ -8,9 +8,13 @@
     <title>js运算符-运算符优先级</title>
     <script>
         // 练习1
-        console.log(4 >= 6 || '人' != '阿凡达' && !(12 * 2 == 144) && true);
+        console.log(4 >= 6 || '人' != '阿凡达' && !(12 * 2 == 144) && true); //true
         var num = 10;
-        console.log(5 == num / 2 && (2 + 2 * num).toString() === '22');
+        console.log(5 == num / 2 && (2 + 2 * num).toString() === '22'); //true
+
+        //练习2
+        var a = 3 > 5 && 2 < 7 && 3 == 4;
+        console.log(a); //false
     </script>
 </head>
 
