@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js流程控制与分支-判断成绩案例</title>
+    <script>
+        // 伪代码  按照从大到小判断的思路
+        // 弹出prompt输入框, 让用户输入分数(score), 把这个值取过来保存到变量中
+        // 使用多分支 if else if 语句来分别判断输出不同的值
+        // var score = prompt('请输入您的成绩(满分100):');
+        // if (score >= 90) {
+        //     alert('您的等级为A');
+        // } else if (score >= 80 && score < 90) {
+        //     alert('您的等级为B');
+        // } else if (score >= 70 && score < 80) {
+        //     alert('您的等级为C');
+        // } else if (score >= 60 && score < 70) {
+        //     alert('您的等级为D');
+        // } else {
+        //     alert('您的成绩为E');
+        // }
+
+        var score = prompt('请输入您的成绩(满分100):');
+        if (score >= 90) {
+            alert('您的等级为A');
+        } else if (score >= 80) {
+            alert('您的等级为B');
+        } else if (score >= 70) {
+            alert('您的等级为C');
+        } else if (score >= 60) {
+            alert('您的等级为D');
+        } else {
+            alert('您的成绩为E');
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
