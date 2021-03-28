@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-03-28 12:19:54
- * @LastEditTime: 2021-03-28 12:21:42
+ * @LastEditTime: 2021-03-28 16:57:21
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \zelind:\学习\JS\JavaScript_practice\基础\js流程控制与分支\js流程控制与分支-switch和if else if的区别.html
@@ -15,7 +15,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>js流程控制与分支-switch和if else if的区别</title>
     <script>
-        // 一般情况下 两种语句可以相互替换
+        // 一般情况下 两种语句可以相互替换 
+        // switch case 语句通常处理case为比较确定值的情况, 而 if else 语句更加灵活, 常用于范围判断(大于、等于某个范围)
+        // switch 语句进行条件判断后直接执行到程序的条件语句, 效率更高 而 if else 语句有几种条件, 就得判断多少次
+        // 当分支比较少时, if else 语句的执行效率比 switch 高
+        // 当分支比较多时, switch 语句的执行效率比较高, 而且结构更清晰
+        // 练习
+        var time = prompt('请输入时间(0 ~ 24):');
+        if (time <= 8) {
+            alert('早上好');
+        } else if (time < 12) {
+            alert('上午好');
+        } else if (time <= 13) {
+            alert('中午好');
+        } else if (time < 18) {
+            alert('下午好');
+        } else if (time == 18) {
+            alert('傍晚好');
+        } else if (time < 23) {
+            alert('晚上好');
+        } else if (time == 23) {
+            alert('深夜好');
+        } else {
+            alert('凌晨好');
+        }
     </script>
 </head>
 
