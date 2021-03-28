@@ -1,0 +1,62 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-03-28 11:42:47
+ * @LastEditTime: 2021-03-28 12:18:46
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \zelind:\学习\JS\JavaScript_practice\基础\js流程控制与分支\js流程控制与分支-查询水果案例.html
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js流程控制与分支-查询水果案例</title>
+    <script>
+        // 弹出 prompt 输入框, 让用户输入水果名称, 把这个值取过来保存到变量中
+        // 将这个变量作为 switch 括号里的表达式
+        // case 后面的值写几个不同的水果名称, 注意一定要加引号, 因为必须是全等匹配
+        // 弹出不同价格即可 同时注意在每个 case 后面加上 break, 以便退出 switch 语句
+        // 将 default 设置为 没有此水果
+        var input = prompt('请输入您想查询的水果名称:');
+        switch (input) {
+            case '苹果':
+                alert('价格为¥10/斤');
+                break;
+            case '香蕉':
+                alert('价格为¥8/斤');
+                break;
+            case '橙子':
+                alert('价格为¥6/斤');
+                break;
+            case '荔枝':
+                alert('价格为¥14/斤');
+                break;
+            case '菠萝':
+                alert('价格为¥12/斤');
+                break;
+            case '西瓜':
+                alert('价格为¥8/斤');
+                break;
+            case '桃子':
+                alert('价格为¥10/斤');
+                break;
+            case '芒果':
+                alert('价格为¥12/斤');
+                break;
+            case '梨':
+                alert('价格为¥8/斤');
+                break;
+            default:
+                alert('没有此水果');
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

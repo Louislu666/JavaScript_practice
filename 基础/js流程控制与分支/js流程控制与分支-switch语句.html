@@ -1,5 +1,14 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-03-28 10:15:17
+ * @LastEditTime: 2021-03-28 10:55:07
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \zelind:\学习\JS\JavaScript_practice\基础\js流程控制与分支\js流程控制与分支-switch语句.html
+-->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,21 +17,39 @@
     <script>
         // 1. switch 语句也是多分支语句 也可以实现多选一
         // 2. 语法结构  switch -> 转换/开关  case -> 例子/选项
-        switch(表达式) {
-            case value1:
-                执行语句1;
+        // switch (表达式) {
+        //     case value1:
+        //         执行语句1;
+        //         break;
+        //     case value2:
+        //         执行语句2;
+        //         break;
+        //         // ...
+        //     default:
+        //         最后的执行语句;
+        // }
+        // 3. 执行思路  利用表达式的值 和 case 后面的选项值相匹配 
+        //如果匹配上 就执行该 case 里面的语句 如果都未匹配上 则执行 default 里面的语句
+        // 4.代码验证
+        switch (3) {
+            case 1:
+                console.log('这是1');
                 break;
-            case value2:
-                执行语句2;
+            case 2:
+                console.log('这是2');
                 break;
-            // ...
+            case 3:
+                console.log('这是3');
+                break;
             default:
-                最后的执行语句;
+                console.log('没有匹配结果');
         }
-        // 3. 执行思路  利用表达式的值 和 case 后面的选项值相匹配 如果匹配上 就执行该 case 里面的语句 如果都未匹配上 则执行 default 里面的语句
+        // 执行效率比 if else if 更高 针对特定值的选项
     </script>
 </head>
+
 <body>
-    
+
 </body>
+
 </html>
