@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-03-28 12:19:54
- * @LastEditTime: 2021-03-28 16:57:21
+ * @LastEditTime: 2021-03-29 16:23:55
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \zelind:\学习\JS\JavaScript_practice\基础\js流程控制与分支\js流程控制与分支-switch和if else if的区别.html
@@ -20,24 +20,94 @@
         // switch 语句进行条件判断后直接执行到程序的条件语句, 效率更高 而 if else 语句有几种条件, 就得判断多少次
         // 当分支比较少时, if else 语句的执行效率比 switch 高
         // 当分支比较多时, switch 语句的执行效率比较高, 而且结构更清晰
-        // 练习
-        var time = prompt('请输入时间(0 ~ 24):');
-        if (time <= 8) {
-            alert('早上好');
-        } else if (time < 12) {
-            alert('上午好');
-        } else if (time <= 13) {
-            alert('中午好');
-        } else if (time < 18) {
-            alert('下午好');
-        } else if (time == 18) {
-            alert('傍晚好');
-        } else if (time < 23) {
-            alert('晚上好');
-        } else if (time == 23) {
-            alert('深夜好');
+        // 练习①
+        // var time = prompt('请输入时间(0 ~ 24):');
+        // if (time <= 8) {
+        //     alert('早上好');
+        // } else if (time < 12) {
+        //     alert('上午好');
+        // } else if (time <= 13) {
+        //     alert('中午好');
+        // } else if (time < 18) {
+        //     alert('下午好');
+        // } else if (time == 18) {
+        //     alert('傍晚好');
+        // } else if (time < 23) {
+        //     alert('晚上好');
+        // } else if (time == 23) {
+        //     alert('深夜好');
+        // } else {
+        //     alert('凌晨好');
+        // }
+        // 练习②
+        // var num1 = prompt('请输入第一个数:');
+        // var num2 = prompt('请输入第二个数:');
+        // if (num1 > num2) {
+        //     alert('最大值是' + num1);
+        // } else if (num1 == num2) {
+        //     alert('两次输入的数相等')
+        // } else {
+        //     alert('最大值是' + num2);
+        // }
+        // 练习③
+        // var num3 = prompt('请输入一个数:');
+        // if (num3 % 2 == 0) {
+        //     alert('该数是偶数');
+        // } else {
+        //     alert('该数是奇数');
+        // }
+        // 练习④
+        // var num4 = prompt('请输入一个1~7内的数字:')
+        // switch (num4) {
+        //     case '1':
+        //         alert('星期一');
+        //         break;
+        //     case '2':
+        //         alert('星期二');
+        //         break;
+        //     case '3':
+        //         alert('星期三');
+        //         break;
+        //     case '4':
+        //         alert('星期四');
+        //         break;
+        //     case '5':
+        //         alert('星期五');
+        //         break;
+        //     case '6':
+        //         alert('星期六');
+        //         break;
+        //     case '7':
+        //         alert('星期日');
+        //         break;
+        //     default:
+        //         alert('输入有误')
+        // }
+        // 练习⑤
+        // var num5 = prompt('班长有多少钱?');
+        // if (num5 >= 2000) {
+        //     alert('吃西餐');
+        // } else if (num5 >= 1500) {
+        //     alert('吃快餐');
+        // } else if (num5 >= 1000) {
+        //     alert('喝饮料');
+        // } else if (num5 >= 500) {
+        //     alert('吃棒棒糖');
+        // } else {
+        //     alert('下次把钱带够')
+        // }
+        // 练习⑥
+        var num6 = prompt('请输入您的分数:');
+        if (num6 >= 90) {
+            alert('您的等级是A');
+        } else if (num6 >= 80) {
+            alert('您的等级是B');
+        } else if (num6 >= 70) {
+            alert('您的等级是C');
+        } else if (num6 >= 60) {
+            alert('您的等级是D');
         } else {
-            alert('凌晨好');
+            alert('您的等级是E')
         }
     </script>
 </head>
