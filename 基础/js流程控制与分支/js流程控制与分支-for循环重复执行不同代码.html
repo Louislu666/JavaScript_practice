@@ -1,0 +1,39 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-03-31 16:43:47
+ * @LastEditTime: 2021-03-31 16:55:12
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \zelind:\学习\JS\JavaScript_practice\基础\js流程控制与分支\js流程控制与分支-for循环重复执行不同代码.html
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js流程控制与分支-for循环重复执行不同代码</title>
+    <script>
+        // for 循环可以重复执行不同的代码 因为我们有计数器变量 i 的存在  i 在每次循环中 都会变化
+        // 输出一个人1~100岁
+        // for (var i = 1; i <= 100; i++) {
+        //     console.log('这个人今年' + i + '岁了');
+        // }
+        for (var i = 1; i <= 100; i++) {
+            if (i == 1) {
+                console.log('出生了');
+            } else if (i == 100) {
+                console.log('awsl');
+            } else {
+                console.log('这个人今年' + i + '岁了');
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
