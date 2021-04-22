@@ -38,8 +38,22 @@ cc.Class({
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
+        var jumpUp = cc.moveBy(this.jumpDuration,cc.v2(0, this.jumpHeight)).easing(cc.easeCubicActionOut());
+        var jumpDown = cc.moveBy(this.jumpDuration,cc.v2(0, -this.jumpHeight)).easing(cc.easeCubicActionIn());
+        var jumpAction = cc.repeatForever(cc.sequence(jumpUp, jumpDown));
+        this.node.runAction(jumpAction);
+
+        // 用户按键 → cc检测 →发消息给用户函数
+        cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, keyDown, this);
+        cc.systemEvent.on(cc.SystemEvent.EventType.KEY_UP, keyUp, this);
+    },
+
+    keyDown () {
+
+    },
+
+    keyUp () {
         
-        cc.node.runAction();
     },
 
     start () {

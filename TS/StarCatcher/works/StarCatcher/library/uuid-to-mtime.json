@@ -535,23 +535,23 @@
     "relativePath": "textures\\star.png"
   },
   "8855e817-4693-4dda-881e-bdb159b2d879": {
-    "asset": 1618801303959,
+    "asset": 1618801318746,
     "meta": 1618801303960,
     "relativePath": "Scenes"
   },
   "a49456e8-9a19-41cc-adda-62826869354b": {
-    "asset": 1618826048895,
-    "meta": 1618826048909,
+    "asset": 1618997682109,
+    "meta": 1618997682123,
     "relativePath": "Scenes\\game.fire"
   },
   "8df277a3-d167-4fe5-9ee9-003e33d7cc48": {
-    "asset": 1618803048568,
+    "asset": 1618803066935,
     "meta": 1618803048570,
     "relativePath": "Scripts"
   },
   "478a2eb3-0613-4e71-9f2f-a02025d50b80": {
-    "asset": 1618826042581,
-    "meta": 1618826045990,
+    "asset": 1618997686364,
+    "meta": 1618997688803,
     "relativePath": "Scripts\\player.js"
   }
 }
