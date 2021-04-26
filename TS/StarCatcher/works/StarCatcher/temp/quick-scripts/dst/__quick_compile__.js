@@ -1,6 +1,6 @@
 
 (function () {
-var scripts = [{"deps":{"./assets/Scripts/player":1},"path":"preview-scripts/__qc_index__.js"},{"deps":{},"path":"preview-scripts/assets/Scripts/player.js"}];
+var scripts = [{"deps":{"./assets/Scripts/player2":1,"./assets/Scripts/player":2},"path":"preview-scripts/__qc_index__.js"},{"deps":{},"path":"preview-scripts/assets/Scripts/player2.js"},{"deps":{},"path":"preview-scripts/assets/Scripts/player.js"}];
 var entries = ["preview-scripts/__qc_index__.js"];
 
 /**

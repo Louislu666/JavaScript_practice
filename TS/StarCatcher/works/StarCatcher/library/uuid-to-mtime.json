@@ -540,18 +540,23 @@
     "relativePath": "Scenes"
   },
   "a49456e8-9a19-41cc-adda-62826869354b": {
-    "asset": 1618997682109,
-    "meta": 1618997682123,
+    "asset": 1619066405855,
+    "meta": 1619066405867,
     "relativePath": "Scenes\\game.fire"
   },
   "8df277a3-d167-4fe5-9ee9-003e33d7cc48": {
-    "asset": 1618803066935,
+    "asset": 1619064141483,
     "meta": 1618803048570,
     "relativePath": "Scripts"
   },
   "478a2eb3-0613-4e71-9f2f-a02025d50b80": {
-    "asset": 1618997686364,
-    "meta": 1618997688803,
+    "asset": 1619064112766,
+    "meta": 1619064121907,
     "relativePath": "Scripts\\player.js"
+  },
+  "9ac9277b-1680-4702-9429-049ee55b6564": {
+    "asset": 1619066399891,
+    "meta": 1619066404836,
+    "relativePath": "Scripts\\player2.js"
   }
 }

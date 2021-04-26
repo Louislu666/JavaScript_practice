@@ -36,6 +36,25 @@ cc.Class({
 
     
     // LIFE-CYCLE CALLBACKS:
+    keyDown (event) {
+        console.log('keyDown(' + event.keyCode + ')');
+        switch (event) {
+            case cc.KEY.a:
+                this.speed = -100;
+                break;
+            case cc.KEY.d:
+                this.speed = 100;
+                break;
+            case cc.KEY.space:
+                this.speed = 0;
+                break;
+        }
+    },
+
+    keyUp (event) {
+        console.log('keyUp(' + event.keyCode + ')');
+        
+    },
 
     onLoad () {
         var jumpUp = cc.moveBy(this.jumpDuration,cc.v2(0, this.jumpHeight)).easing(cc.easeCubicActionOut());
@@ -44,21 +63,17 @@ cc.Class({
         this.node.runAction(jumpAction);
 
         // 用户按键 → cc检测 →发消息给用户函数
-        cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, keyDown, this);
-        cc.systemEvent.on(cc.SystemEvent.EventType.KEY_UP, keyUp, this);
+        cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.keyDown, this);
+        cc.systemEvent.on(cc.SystemEvent.EventType.KEY_UP, this.keyUp, this);
     },
 
-    keyDown () {
-
-    },
-
-    keyUp () {
-        
-    },
 
     start () {
 
     },
 
-    // update (dt) {},
+    update (dt) {
+        var d = this.speed * dt;
+        this.node.x += d;
+    },
 });
